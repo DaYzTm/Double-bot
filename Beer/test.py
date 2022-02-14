@@ -11,11 +11,11 @@ app = Client("myr_acrtkrcount")
 
 api_id = '16890749'
 api_hash = 'd5439aaa3ff4ef30696decf6389341ff'
-text_sis = '/sisi@sisiupbot'
+text_sis = '/beer@beerupbot'
 
 TIMEOUT = 3600
 
-@app.on_message(filters.command('/sisi@sisiupbot', prefixes='/') & filters.me)
+@app.on_message(filters.command('/beer@beerupbot', prefixes='/') & filters.me)
 async def enable_spam(_, message):
     await message.delete()
     cmd= message.text.split()
