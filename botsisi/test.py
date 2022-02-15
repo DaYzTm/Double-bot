@@ -15,7 +15,7 @@ text_sis = '/sisi@sisiupbot'
 
 TIMEOUT = 3600
 
-@app.on_message(filters.command('/sisi@sisiupbot', prefixes='/') & filters.me)
+@app.on_message(filters.command('/sisi@sisiupbot', prefixes='.') & filters.me)
 async def enable_spam(_, message):
     await message.delete()
     cmd= message.text.split()
